@@ -7,8 +7,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class MemberDto {
-    /*DistrictMemberDto districtMemberDto;
-    TalukMemberDto talukMemberDto;*/
-    //GramPanchayatMemberDto gramPanchayatMemberDto;
     String Message; // login successfull or not
 }
