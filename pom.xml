@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.portal</groupId>
 	<artifactId>party-member-portal</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.2</version>
 	<name>party-member-portal</name>
 	<description>party-member-portal-application</description>
 	<url/>
@@ -57,7 +57,7 @@
 		<dependency>
 		<groupId>org.example</groupId>
 		<artifactId>party-member-portal-library</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.2</version>
 		</dependency>
 	</dependencies>
 

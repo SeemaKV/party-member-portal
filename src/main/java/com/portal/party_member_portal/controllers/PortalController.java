@@ -1,6 +1,6 @@
 package com.portal.party_member_portal.controllers;
 
-import com.portal.party_member_portal.dto.MemberDto;
+import com.portal.party_member_portal.dto.DistrictMemberDto;
 import com.portal.party_member_portal.entities.*;
 import com.portal.party_member_portal.services.PortalService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,6 +48,7 @@ public class PortalController {
     }
     @PostMapping("/add-roles")
     public void addRoles(List<Role> roles){
+
         portalService.addRoles(roles);
     }
     @PostMapping("/addpollingstation")
@@ -72,9 +73,9 @@ public class PortalController {
         portalService.registerUser(user);
     }
 
-    /*public MemberDto authenticateUser(@RequestParam String phoneNumber, @RequestParam String password){
-        return portalService.authenticateUser(phoneNumber, password);
-    }*/
-
+    @GetMapping("/getDistrictMemberDetails")
+    public DistrictMemberDto loginUser(@RequestParam String phoneNumber, @RequestParam String password) {
+        return portalService.loginUser(phoneNumber, password);
+    }
 
 }
